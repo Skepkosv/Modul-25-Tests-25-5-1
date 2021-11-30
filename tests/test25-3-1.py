@@ -27,7 +27,7 @@ def test_show_all_pets():
     # Проверяем, что мы на главной странице пользователя
     assert pytest.driver.find_element_by_tag_name('h1').text == "PetFriends"
 
-    # Устанавливаем неявные ожидания(сек)
+    # Устанавливаем неявные ожидания(секунды)
     driver.implicitly_wait(10)
 
 def test_card_my_pets():
